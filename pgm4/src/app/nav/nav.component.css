@@ -1,0 +1,24 @@
+nav.navbar {
+    padding: 20px 115px;
+}
+
+li.nav-item {
+    padding: 0px 15px;
+    margin-right: 10px;
+    left: 250px;
+}
+
+a.nav-link {
+    position: relative;
+    left: 250px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+a.navbar-brand.text-white {
+    font-weight: 700;
+}
