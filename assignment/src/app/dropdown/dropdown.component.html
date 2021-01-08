@@ -1,0 +1,41 @@
+<!-- <div class="dropdown dropdown-scroll">
+    <button class="btn btn-default event-button dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+      <span>Search</span>
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <div class="input-group input-group-sm search-control">
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-search"></span>
+            </span>
+            <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <ul class="dropdown-list">
+            <li role="presentation" *ngFor="let item of persondata;">
+                <a>{{item.first_name}}{{item.last_name}}</a>
+            </li>
+        </ul>
+    </div>
+</div> -->
+
+<!-- <form>
+    <label for="cars">Employee Name:</label>
+    <select name="cars" id="cars">
+    <option value="volvo">Select employee details...</option>
+    <option >{{item.first_name}} {{item.last_name}}</option>
+      </select>
+    <br><br>
+    <input type="submit" value="Submit">
+</form> -->
+<h3 [ngStyle]="{'text-align':'center','color':'blue','position':'relative','top':'20px'}">Employee Data</h3>
+
+<div class="container">
+    <form #f="ngForm" id="form">
+        <select> 
+    <option [ngValue]="undefined" disabled>Select Any </option>
+      <option *ngFor="let item of persondata;"> {{item.first_name}} {{item.last_name}} </option>
+    </select>
+
+        <button [ngStyle]="{'text-align':'center','color':'blue'}" type="submit" (click)="getDetails(item)"> submit </button>
+    </form>
+</div>
