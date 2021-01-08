@@ -7,18 +7,22 @@ body {
     line-height: 0.9;
 }
 
+#image {
+    cursor: zoom-in;
+}
+
 .employee-title {
     text-align: center;
     font-size: 2.6rem;
 }
 
 .detail {
-    width: 90%;
-    height: 90%;
+    width: 400px;
+    height: 180px;
     padding: 10px;
-    margin: 0px 0px 0px 60px;
+    margin: 0px 0px 0px 40px;
     background-color: #fff;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
+    box-shadow: 3px 3px 3px rgba(0.4, 0, 0, 0.4);
     overflow: hidden;
     display: inline-block;
     box-sizing: border-box;
@@ -26,8 +30,9 @@ body {
 
 .employee-photo {
     float: left;
-    width: 40%;
-    margin-right: 70px;
+    width: 80px;
+    top: 30px;
+    height: 130px;
 }
 
 .employee-name {
@@ -43,8 +48,14 @@ body {
     margin: 0;
 }
 
+#image:hover {
+    opacity: 0.7;
+}
 
-/*  */
-
-
-/*  */
+@media screen and(max-width:600px) {
+    .detail {
+        width: 335px;
+        margin: 0px 0px 0px 10px;
+        height: 180px;
+    }
+}

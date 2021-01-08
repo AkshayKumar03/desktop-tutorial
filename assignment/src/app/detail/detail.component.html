@@ -1,14 +1,16 @@
-<!-- <h1>{{data}}</h1> -->
+<h3 [ngStyle]="{'text-align':'center','color':'blue','position':'relative','top':'20px'}">Employee Details</h3>
 
-<div class="detail container1 mt-5">
-    <a [ngStyle]="{'color':'black'}" *ngFor="let item of persondata;">
-        <img src="{{item.avatar}}">
+<div class="detail container1 mt-3" *ngFor="let item of persondata;">
+    <a [ngStyle]="{'color':'black'}">
+        <img src="{{item.avatar}}" class="employee-photo inner-img modal-hover-opacity" id="image">
         <p class="employee-name">
             <strong>Name :</strong> {{item.first_name}} {{item.last_name}}
         </p>
-        <p><strong>Email :</strong> {{item.email}}</p>
+
+
+        <p>
+            <strong>Email:</strong>
+            <span style="font-size:15px; word-spacing:-1px;">{{item.email}}</span>
+        </p>
     </a>
-
 </div>
-
-<!-- <mat-progress-spinner mode="indeterminate" diameter='30' strokeWidth='10'></mat-progress-spinner> -->
